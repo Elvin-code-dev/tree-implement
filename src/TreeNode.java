@@ -1,11 +1,11 @@
-public class TreeNode {
+public class TreeNode<T> {
 
-  public int value;
-  public TreeNode left;
-  public TreeNode right;
+  public T value;
+  public TreeNode<T> left;
+  public TreeNode<T> right;
 
-  public TreeNode(int value, TreeNode left, TreeNode right){
-    this.value = value;
+  public TreeNode(T data, TreeNode<T> left, TreeNode<T> right){
+    this.value = data;
     this.left = left;
     this.right = right;
     
